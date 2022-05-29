@@ -1,0 +1,72 @@
+@import url("root.css");
+body{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.box{
+    background-color: var(--Dark-Grayish-Blue);
+    min-width: 200px;
+    max-width: 400px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.id-style{
+    color:var(--Neon-Green);
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 40px;
+}
+.advice-style{
+    text-align: center;
+    color:var(--Light-Cyan);
+    font-size: 28px;
+    margin: 30px 20px;
+}
+.btn-random{
+    position: relative;
+    top:30px;
+}
+.btn-random button{
+    cursor: pointer;
+    outline: none;
+    border:none;
+    border-radius: 100px;
+    background-color: var(--Neon-Green);
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.btn-random button img{
+    width: 20px;
+    height: auto;
+}
+.btn-random button:hover{
+    box-shadow: 1px 1px 99px 20px var(--Neon-Green);
+    -webkit-box-shadow: 1px 1px 99px 20px var(--Neon-Green);
+    -moz-box-shadow: 1px 1px 99px 20px var(--Neon-Green);
+}
+.svg-mobile{
+    margin: 0px;
+}
+.svg-desktop{
+    display: none;
+}
+@media (min-width:810px){
+    .svg-mobile{
+        display: none;
+    }
+    .svg-desktop{
+        display: block;
+        margin: 0px 20px;
+        width: 100%;
+        padding: 0px 20px;
+    }
+}

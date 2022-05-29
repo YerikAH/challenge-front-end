@@ -318,6 +318,7 @@ main{
 @media(min-width:1000px){
     .info-content-text-logo{
         position: absolute;
+        margin-top:30px;
     }
     .logo-success{
         width:120px;
