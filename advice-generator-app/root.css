@@ -5,7 +5,8 @@
     --Dark-Blue: hsl(218, 23%, 16%);
     --Light-Cyan: hsl(193, 38%, 86%);
     --Neon-Green: hsl(150, 100%, 66%);
-    --regular:28px
+    --regular:28px;
+    --normal:16px;
 }
 html{
     font-family: 'Manrope', sans-serif;

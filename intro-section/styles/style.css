@@ -327,3 +327,37 @@ main{
         width:80px
     }
 }
+.footer-made{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--Almost-Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.footer-made p{
+    padding: 0.5rem;
+    color:var(--Almost-White);
+    font-weight: 500;
+}
+.effect{
+    position: relative;
+    text-decoration: none;
+    color: var(--Almost-White);
+}
+.effect:after{
+    content: "";
+    position: absolute;
+    background-color: var(--Almost-White);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    z-index: 900;
+}
+.effect:hover:after{
+    width: 100%;
+    transition: 0.5s;
+}

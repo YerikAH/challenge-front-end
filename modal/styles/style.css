@@ -136,3 +136,37 @@ body{
     color:var(--dark-blue);
     transition: 0.3s;
 }
+.footer-made{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--bright-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.footer-made p{
+    padding: 0.5rem;
+    color:var(--pale-blue);
+    font-weight: 700;
+}
+.effect{
+    position: relative;
+    text-decoration: none;
+    color: var(--pale-blue);
+}
+.effect:after{
+    content: "";
+    position: absolute;
+    background-color: var(--pale-blue);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    z-index: 900;
+}
+.effect:hover:after{
+    width: 100%;
+    transition: 0.5s;
+}
