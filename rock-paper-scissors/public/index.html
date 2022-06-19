@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../svg/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+    <div class="modal-all-rules" id="onOrOffModal">
+      <div class="grid-center">
+        <div class="squeare-modal" id="bodyModal">
+          <h2 class="title-rules">RULES</h2>
+          <button class="btn-rules" id="closeModal">
+            <img src="../svg/icon-close.svg" alt="" />
+          </button>
+          <div class="modal-rule-image-container">
+            <img src="../svg/image-rules.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="logo">
+        <img src="../svg/logo.svg" alt=" " />
+      </div>
+      <div class="score">
+        <span class="score-text">SCORE</span>
+        <span class="score-number" id="score">0</span>
+      </div>
+    </nav>
+    <main>
+      <div class="play-start" id="playStart">
+        <div class="center-all-grid">
+          <div class="circle-one paper" id="paper">
+            <div class="circle-two">
+              <img src="../svg/icon-paper.svg" alt="" />
+            </div>
+          </div>
+          <div class="circle-one scissors" id="scissors">
+            <div class="circle-two">
+              <img src="../svg/icon-scissors.svg" alt="" />
+            </div>
+          </div>
+          <img src="../svg/bg-triangle.svg" alt="" class="figure" />
+          <div class="circle-one rock" id="rock">
+            <div class="circle-two">
+              <img src="../svg/icon-rock.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="final-game" id="finalGame">
+        <div class="center-all-grid-after" id="grillaGameAnimation">
+          <div class="user">
+            <div class="win-random" id="winUser">
+              <div class="circle-one-choice" id="choiceColorUser">
+                <div class="circle-two-choice">
+                  <img id="choiceImgUser" alt="" />
+                </div>
+              </div>
+              <h4 class="picked">YOU PICKED</h4>
+            </div>
+          </div>
+
+          <div class="player">
+            <div class="win-player" id="winPlayer">
+              <div class="circle-one-choice" id="choiceColorPlayer">
+                <div class="circle-two-choice-player">
+                  <img id="choiceImgPlayer" alt="" />
+                </div>
+              </div>
+              <h4 class="picked">THE HOUSE PICKED</h4>
+            </div>
+          </div>
+          <div class="win-or-lose" id="scaleWinOrLose">
+            <h1 id="winOrLose" class="winOrLose">YOU LOSE</h1>
+            <button id="tryAgain" class="tryAgain">PLAY AGAIN</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <button id="modalRules" class="modal-rules">RULES</button>
+    </footer>
+    <script src="../src/index.js" type="module"></script>
+  </body>
+</html>

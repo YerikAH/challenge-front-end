@@ -1,0 +1,323 @@
+.final-game {
+  display: none;
+}
+
+.center-all-grid {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: -150px;
+}
+.circle-one {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 255px;
+  cursor: pointer;
+}
+.paper {
+  right: 90px;
+  top: 260px;
+  background: rgb(71, 100, 244);
+  background: linear-gradient(
+    323deg,
+    rgba(71, 100, 244, 1) 15%,
+    rgba(86, 112, 245, 1) 100%
+  );
+}
+.scissors {
+  left: 100px;
+  top: 110px;
+  background: rgb(235, 168, 34);
+  background: linear-gradient(
+    239deg,
+    rgba(235, 168, 34, 1) 32%,
+    rgba(236, 158, 13, 1) 100%
+  );
+}
+.rock {
+  background: rgb(219, 45, 77);
+  background: linear-gradient(
+    323deg,
+    rgba(219, 45, 77, 1) 15%,
+    rgba(221, 64, 93, 1) 100%
+  );
+  bottom: 150px;
+}
+.circle-two {
+  background-color: var(--white);
+  width: 100px;
+  height: 100px;
+  border-radius: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.circle-two img {
+  cursor: pointer;
+}
+@media (min-width: 500px) {
+  .paper {
+    right: 150px;
+    top: 250px;
+  }
+  .scissors {
+    left: 150px;
+    top: 100px;
+  }
+  .rock {
+    bottom: 100px;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 600px) {
+  .center-all-grid {
+    margin-top: -190px;
+  }
+}
+
+@media (min-width: 1300px) and (min-height: 800px) {
+  .center-all-grid {
+    margin-top: -120px;
+  }
+}
+/*mobile extremo*/
+@media (max-width: 360px) {
+  .circle-one {
+    width: 100px;
+    height: 100px;
+  }
+  .paper {
+    right: 130px;
+    top: 170px;
+  }
+  .scissors {
+    left: 106px;
+    top: 70px;
+  }
+  .rock {
+    bottom: 90px;
+  }
+  .circle-two {
+    width: 70px;
+    height: 70px;
+  }
+  .center-all-grid {
+    margin-top: -90px;
+  }
+}
+/*after play*/
+.final-game {
+  height: 50vh;
+}
+.paper-choice {
+  background: rgb(71, 100, 244);
+  background: linear-gradient(
+    323deg,
+    rgba(71, 100, 244, 1) 15%,
+    rgba(86, 112, 245, 1) 100%
+  );
+}
+.scissors-choice {
+  background: rgb(235, 168, 34);
+  background: linear-gradient(
+    239deg,
+    rgba(235, 168, 34, 1) 32%,
+    rgba(236, 158, 13, 1) 100%
+  );
+}
+.rock-choice {
+  background: rgb(219, 45, 77);
+  background: linear-gradient(
+    323deg,
+    rgba(219, 45, 77, 1) 15%,
+    rgba(221, 64, 93, 1) 100%
+  );
+}
+.center-all-grid-after {
+  display: grid;
+  grid-template-areas:
+    "userChoice playerChoice"
+    "winOrLose winOrLose";
+  place-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 150px;
+}
+
+.win-or-lose {
+  grid-area: winOrLose;
+}
+.user {
+  grid-area: userChoice;
+}
+.player {
+  grid-area: playerChoice;
+}
+
+.circle-one-choice {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 255px;
+}
+.circle-two-choice {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 255px;
+  background-color: var(--white);
+}
+@media (min-width: 750px) {
+  .circle-one-choice {
+    width: 200px;
+    height: 200px;
+  }
+  .circle-two-choice {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.user,
+.player {
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+  flex-direction: column;
+}
+.circle-two-choice-player {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 255px;
+  background-color: hsla(238.4, 48.1%, 15.1%, 0.53);
+}
+@media (min-width: 750px) {
+  .circle-two-choice-player {
+    width: 150px;
+    height: 150px;
+  }
+}
+.tryAgain {
+  background: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: var(--dark-text);
+  margin-bottom: 50px;
+}
+.winOrLose {
+  color: var(--white);
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.574);
+}
+
+/*cambiar con animacion*/
+.win-or-lose {
+  transform: scale(0);
+  transition: 1.5s;
+  display: grid;
+  margin-top: 120px;
+}
+@media (min-width: 900px) {
+  .center-all-grid-after {
+    grid-template-areas: "userChoice winOrLose playerChoice";
+    gap: 30px;
+  }
+  .user {
+    position: relative;
+    left: 150px;
+  }
+  .player {
+    position: relative;
+    right: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .user {
+    left: 210px;
+  }
+  .player {
+    right: 210px;
+  }
+}
+.circle-one-choice {
+  transition: 0.5s;
+}
+.circle-two-choice {
+  box-shadow: inset 3px 2px 2px 1px rgba(0, 0, 0, 0.37);
+}
+.circle-two {
+  box-shadow: inset 3px 2px 2px 1px rgba(0, 0, 0, 0.37);
+}
+.circle-one {
+  box-shadow: inset 3px -5px 1px rgba(0, 0, 0, 0.37);
+}
+.circle-one-choice {
+  box-shadow: inset -1px -9px 1px rgba(0, 0, 0, 0.37) !important;
+}
+.tryAgain:hover {
+  color: var(--rock-gradient_one);
+}
+.win-random {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 255px;
+  transition: 0.5s;
+}
+
+@media (min-width: 750px) {
+  .win-random {
+    width: 200px;
+    height: 200px;
+  }
+}
+.win-player {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 255px;
+  transition: 0.5s;
+}
+@media (min-width: 750px) {
+  .win-player {
+    width: 200px;
+    height: 200px;
+  }
+}
+.picked {
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  margin: 25px 0;
+  text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.574);
+}
+@media (min-width: 750px) {
+  .picked {
+    font-size: 1rem;
+    position: relative;
+    bottom: 270px;
+    font-weight: 600;
+  }
+}

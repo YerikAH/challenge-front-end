@@ -1,0 +1,87 @@
+/* Barlow Semi Condensed 600 - 700 */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+/*var*/
+
+:root {
+  --scissors-gradient_one: hsl(39, 89%, 49%);
+  --scissors-gradient_two: hsl(40, 84%, 53%);
+  --paper-gradient_one: hsl(230, 89%, 62%);
+  --paper-gradient_two: hsl(230, 89%, 65%);
+  --rock-gradient_one: hsl(349, 71%, 52%);
+  --rock-gradient_two: hsl(349, 70%, 56%);
+  --lizard-gradient_one: hsl(261, 73%, 60%);
+  --lizard-gradient_two: hsl(261, 72%, 63%);
+  --cyan_one: hsl(189, 59%, 53%);
+  --cyan_two: hsl(189, 58%, 57%);
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header-outline: hsl(217, 16%, 45%);
+  --radial-gradient-one: hsl(214, 47%, 23%);
+  --radial-gradient-two: hsl(237, 49%, 15%);
+  --white: #e4e4e4;
+  --typography-primary: "Barlow Semi Condensed", sans-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  font-family: var(--typography-primary);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+body {
+  background: rgb(31, 54, 86);
+  background: radial-gradient(
+    600px 600px at top center,
+    rgb(31, 54, 86) 26%,
+    rgb(19, 21, 56) 100%
+  );
+  height: 200vh;
+  padding: 0 30px;
+}
+
+footer {
+  margin: 2%;
+  position: static;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 0 10%;
+  }
+  footer {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    padding: 0 10%;
+  }
+  html {
+    overflow-y: hidden;
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    padding: 0 20%;
+  }
+  html {
+    overflow-y: hidden;
+  }
+}
