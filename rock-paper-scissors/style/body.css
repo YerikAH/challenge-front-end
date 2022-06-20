@@ -93,15 +93,15 @@
     height: 100px;
   }
   .paper {
-    right: 130px;
+    right: 90px;
     top: 170px;
   }
   .scissors {
-    left: 106px;
+    left: 90px;
     top: 70px;
   }
   .rock {
-    bottom: 90px;
+    bottom: 110px;
   }
   .circle-two {
     width: 70px;
@@ -113,7 +113,7 @@
 }
 /*after play*/
 .final-game {
-  height: 50vh;
+  height: auto;
 }
 .paper-choice {
   background: rgb(71, 100, 244);
@@ -319,5 +319,25 @@
     position: relative;
     bottom: 270px;
     font-weight: 600;
+  }
+}
+.responsive-triangule {
+  width: 80%;
+  max-width: 323px;
+}
+
+.responsive-triangule img {
+  width: 100%;
+  height: auto;
+}
+@media (min-height: 810px) {
+  .center-all-grid {
+    margin-top: -100px;
+  }
+}
+
+@media (min-height: 1000px) {
+  .center-all-grid {
+    margin-top: -50px;
   }
 }
