@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
-:root{
-    --trans:rgba(0, 0, 0, 0.678);
-    --Almost-White: hsl(0, 0%, 98%);
-    --Medium-Gray: hsl(0, 0%, 41%);
-    --Almost-Black: hsl(0, 0%, 8%);
-    --white:#fff;
-    --regular : 1.125rem;
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+:root {
+  --trans: rgba(0, 0, 0, 0.678);
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+  --white: #fff;
+  --regular: 1.125rem;
 }
-html{
-    font-family:'Epilogue', sans-serif;
-    overflow-x: hidden;
-    font-size:var(--regular);
+html {
+  font-family: "Epilogue", sans-serif;
+  font-size: var(--regular);
 }
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: var(--Almost-White);
+body {
+  background-color: var(--Almost-White);
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }

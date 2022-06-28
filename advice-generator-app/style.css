@@ -1,107 +1,72 @@
 @import url("root.css");
-body{
-    display: grid;
-    place-items: center;
-    width: 100vw;
-    height: 100vh;
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
 }
-.box{
-    background-color: var(--Dark-Grayish-Blue);
-    min-width: 200px;
-    max-width: 400px;
-    margin: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 15px;
+.box {
+  background-color: var(--Dark-Grayish-Blue);
+  min-width: 200px;
+  max-width: 400px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
 }
-.id-style{
-    color:var(--Neon-Green);
-    font-size: 10px;
-    letter-spacing: 3px;
-    margin-top: 40px;
+.id-style {
+  color: var(--Neon-Green);
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 40px;
 }
-.advice-style{
-    text-align: center;
-    color:var(--Light-Cyan);
-    font-size: 28px;
-    margin: 30px 20px;
+.advice-style {
+  text-align: center;
+  color: var(--Light-Cyan);
+  font-size: 28px;
+  margin: 30px 20px;
 }
-.btn-random{
-    position: relative;
-    top:30px;
+.btn-random {
+  position: relative;
+  top: 30px;
 }
-.btn-random button{
-    cursor: pointer;
-    outline: none;
-    border:none;
-    border-radius: 100px;
-    background-color: var(--Neon-Green);
-    width: 50px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    height: 50px;
+.btn-random button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background-color: var(--Neon-Green);
+  width: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 50px;
 }
-.btn-random button img{
-    width: 20px;
-    height: auto;
+.btn-random button img {
+  width: 20px;
+  height: auto;
 }
-.btn-random button:hover{
-    box-shadow: 1px 1px 99px 20px var(--Neon-Green);
-    -webkit-box-shadow: 1px 1px 99px 20px var(--Neon-Green);
-    -moz-box-shadow: 1px 1px 99px 20px var(--Neon-Green);
+.btn-random button:hover {
+  box-shadow: 1px 1px 99px 20px var(--Neon-Green);
+  -webkit-box-shadow: 1px 1px 99px 20px var(--Neon-Green);
+  -moz-box-shadow: 1px 1px 99px 20px var(--Neon-Green);
 }
-.svg-mobile{
-    margin: 0px;
+.svg-mobile {
+  margin: 0px;
 }
-.svg-desktop{
+.svg-desktop {
+  display: none;
+}
+@media (min-width: 810px) {
+  .svg-mobile {
     display: none;
-}
-@media (min-width:810px){
-    .svg-mobile{
-        display: none;
-    }
-    .svg-desktop{
-        display: block;
-        margin: 0px 20px;
-        width: 100%;
-        padding: 0px 20px;
-    }
-}
-.footer-made{
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    background-color: var(--Grayish-Blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-.footer-made p{
-    padding: 0.5rem;
-    color:var(--Light-Cyan);
-    font-weight: 500;
-    font-size: var(--normal);
-}
-.effect{
-    position: relative;
-    text-decoration: none;
-    color: var(--Light-Cyan);
-}
-.effect:after{
-    content: "";
-    position: absolute;
-    background-color: var(--Light-Cyan);
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -3px;
-    z-index: 900;
-}
-.effect:hover:after{
+  }
+  .svg-desktop {
+    display: block;
+    margin: 0px 20px;
     width: 100%;
-    transition: 0.5s;
+    padding: 0px 20px;
+  }
 }

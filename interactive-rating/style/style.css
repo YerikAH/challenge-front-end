@@ -1,0 +1,124 @@
+@import url("./root.css");
+
+.first-modal {
+  background: rgb(23, 30, 40);
+  background: linear-gradient(
+    0deg,
+    rgba(23, 30, 40, 1) 41%,
+    rgba(34, 41, 49, 1) 73%
+  );
+  padding: 1rem;
+  border-radius: 20px;
+  width: 300px;
+}
+.first-modal h2 {
+  color: #ffffff;
+}
+.first-modal p {
+  color: hsl(217, 12%, 63%);
+  margin-top: 20px;
+}
+.ball-icon-start {
+  width: 45px;
+  height: 45px;
+  border-radius: 255px;
+  background-color: #252f39;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.grid-balls-status {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 40px;
+}
+.comun {
+  color: #7c848f;
+  width: 50px;
+  height: 50px;
+  border-radius: 255px;
+  background-color: #262f38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+.comun:hover {
+  transition: 0.3s;
+  background-color: var(--orange);
+  color: white;
+}
+.btn-submit {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: var(--orange);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 16px;
+  border-radius: 255px;
+  padding: 0.8rem;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.btn-submit:hover {
+  background-color: white;
+  color: var(--orange);
+  transition: 0.3s;
+}
+.second-modal {
+  background: rgb(23, 30, 40);
+  background: linear-gradient(
+    0deg,
+    rgba(23, 30, 40, 1) 41%,
+    rgba(34, 41, 49, 1) 73%
+  );
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.user-select {
+  margin: 40px 0;
+  color: var(--orange);
+  background-color: #252f39;
+  padding: 0.4rem 1rem;
+  border-radius: 255px;
+}
+.second-modal h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.text-second-modal {
+  text-align: center;
+  color: var(--light-grey);
+}
+.active {
+  background-color: hsl(216, 12%, 54%);
+  color: #fff;
+}
+.error {
+  display: none;
+}
+.error p {
+  text-align: center;
+  color: #ff5050;
+}
+@media (min-width: 500px) {
+  .first-modal {
+    padding: 2rem;
+    width: 400px;
+  }
+  .second-modal {
+    width: 400px;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css".css">
+    <title>Interative rating with javascript</title>
+  </head>
+  <body>
+    <main>
+      <div class="first-modal" id="clickPass">
+        <div class="ball-icon-start">
+          <img src="./image/icon-star.svg" alt="" />
+        </div>
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="grid-balls-status">
+          <button id="oneStar" value="1" class="status-one comun">1</button>
+          <button id="twoStar" value="2" class="status-two comun">2</button>
+          <button value="3" id="threeStar" class="status-three comun">3</button>
+          <button id="fourStar" value="4" class="status-four comun">4</button>
+          <button id="fiveStar" value="5" class="status-five comun">5</button>
+        </div>
+        <button class="btn-submit" id="submit">SUBMIT</button>
+        <div class="error" id="err"><p>Choice a number, please</p></div>
+      </div>
+      <div class="second-modal" id="thanks">
+        <img src="./image/illustration-thank-you.svg" alt="" />
+        <div class="user-select">
+          <p>You selected <span id="choice"></span> out of 5</p>
+        </div>
+        <h2>Thank you!</h2>
+        <p class="text-second-modal">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch.
+        </p>
+      </div>
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
