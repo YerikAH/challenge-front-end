@@ -1,0 +1,152 @@
+@import url("./root.css");
+.first-part {
+  background-color: var(--soft-red);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1em;
+}
+.second-part {
+  background-color: var(--very-pale-orange);
+  margin-top: 1rem;
+  border-radius: 1em;
+  display: grid;
+  padding: 1rem;
+}
+.paint {
+  display: grid;
+  grid-template-columns: repeat(7, 30px);
+  gap: 10px;
+  align-items: end;
+}
+.paint-square {
+  width: 30px;
+  height: 50px;
+  background-color: var(--soft-red);
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.title-spending {
+  font-size: 1.35rem;
+  color: var(--dark-brown);
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+.text-paint {
+  text-align: center;
+  text-align: center;
+  color: var(--medium-brown);
+  margin-top: 0.5rem;
+}
+.pain-one {
+  height: 40px;
+}
+.pain-two {
+  height: 95px;
+}
+.pain-three {
+  height: 140px;
+  background-color: var(--cyan);
+}
+.pain-four {
+  height: 80px;
+}
+.pain-five {
+  height: 60px;
+}
+.pain-six {
+  height: 110px;
+}
+.pain-seven {
+  height: 65px;
+}
+
+.pain-one:hover {
+  opacity: 0.6;
+}
+.pain-two:hover {
+  opacity: 0.6;
+}
+.pain-three:hover {
+  opacity: 0.6;
+}
+.pain-four:hover {
+  opacity: 0.6;
+}
+.pain-five:hover {
+  opacity: 0.6;
+}
+.pain-six:hover {
+  opacity: 0.6;
+}
+.pain-seven:hover {
+  opacity: 0.6;
+}
+
+.text {
+  color: var(--very-pale-orange);
+}
+.text b {
+  font-size: 1.5rem;
+}
+.other-part {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border-top: 3px solid var(--cream);
+  padding: 1.5rem 0 0 0;
+}
+.other-first p {
+  font-size: 0.8rem;
+  color: var(--medium-brown);
+  margin-bottom: 0.3rem;
+}
+.other-first h2 {
+  color: var(--dark-brown);
+}
+.other-second {
+  text-align: right;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.other-second span {
+  color: var(--dark-brown);
+  font-weight: 700;
+}
+.other-second p {
+  color: var(--medium-brown);
+}
+.box-hove {
+  background: var(--dark-brown);
+  color: var(--very-pale-orange);
+  font-weight: 700;
+  width: 35px;
+  padding: 0.3rem 0;
+  text-align: center;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+  display: none;
+}
+@media (min-width: 375px) {
+  .paint {
+    grid-template-columns: repeat(7, 35px);
+  }
+  .paint-square {
+    width: 35px;
+  }
+}
+@media (min-width: 710px) {
+  .box-hove {
+    width: 45px;
+    font-size: 0.8rem;
+  }
+  .paint {
+    grid-template-columns: repeat(7, 40px);
+  }
+  .paint-square {
+    width: 40px;
+  }
+}
